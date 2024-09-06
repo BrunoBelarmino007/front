@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="left">
+        <h1>PET+</h1>
+        <p>
+          O PET Plus auxilia na administração e organização do seu petshop de maneira moderna e aprimorada.</p>
+    </div>
+    <div class="right">
+        <form class="login-form">
+            <input type="text" placeholder="Email ou telefone">
+            <input type="password" placeholder="Senha" id="typePasswordX" formControlName="password">
+            <button class="login-button" [disabled]="!isFormValid">Entrar</button>
+            <a routerLink="/front-api-pet/src/app/index/index.component.html" class="btn"></a>
+            <a href="./telaprincipal/telaprincipal.component.html" class="forgot-password">Esqueceu a senha?</a>
+            <hr>
+            <button class="create-account">Criar nova conta</button>
+        </form>
+    </div>
+  </div>
+</main>
+</body>
+</html>
